@@ -4,6 +4,7 @@
     --gray: #524658;
     --light-pomelo:#FEF1E1;
     --light-gray:  #F8F8F8;
+    --pink: #C81162;
     
     --medium-font-size:18px;
     --medium-line-height:27px;
@@ -37,6 +38,14 @@ line-height: 41px;
 letter-spacing: -0.0035em;
 color: var(--violet-color);
 font-weight: bold;
+
+}
+
+h4{
+    font-size: 25px;
+    line-height: 31px;
+    letter-spacing: -0.0009em;
+color: var(--violet-color);
 }
 
 hr.divider{
@@ -160,18 +169,30 @@ color:#fff;
     margin-top: 32px;
 }
 
-.hero-section .info{
+.trustpilot-info.light{
     padding: 47px 0;
 }
 
-.hero-section .info span{
+.trustpilot-info.dark{
+    padding: 5px 0;
+}
+
+.trustpilot-info span{
     font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
     font-size: var(--small-font-size);
     line-height: var(--xsmall-line-height);
-    color: #FFF;
+    
 }
 
-.hero-section .info img{
+.trustpilot-info.light span{
+    color: #fff;
+}
+
+.trustpilot-info.dark span{
+    color: var(--gray);
+}
+
+.trustpilot-info img{
     width: 90px;
     height: 14px;
 }
@@ -237,4 +258,86 @@ section.pricing-section{
 
 section.pricing-section .wrapper .content{
     text-align: center;
+}
+
+.pricing-section div.pricing-card{
+    padding: 32px 28px;
+    box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.12);
+border-radius: 20px;
+}
+
+.pricing-section div.pricing-cards{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    
+}
+
+div.pricing-card ul{
+   list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+div.pricing-card li{
+    padding-bottom: 20px;
+} 
+
+div.pricing-card ul li img{
+    transform: translate(0px, 6px);
+    margin-right: 10px;
+}
+
+
+div.pricing-card li span{
+    font-weight: bold;
+}
+
+div.pricing-card div.progress-indicator{
+    height: 10px;
+    background: linear-gradient(90deg, #C81162 0%, #CD205D 8.33%, #D22F58 15.62%, #D63D53 26.04%, #DB4C4D 35.94%, #DF5A48 46.35%, #E46843 57.29%, #E8763E 68.23%, #EC8439 76.56%, #F19134 87.5%, #F49E2F 98.96%);
+border-radius: 4px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+margin-right: 70%;
+}
+
+div.pricing-card div.video-indicator-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--xsmall-font-size);
+    font-weight: var(--xsmall-line-height);
+    margin-bottom: 5px;
+}
+
+div.pricing-card div.plan-pricing-prices{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+div.pricing-card div.plan-pricing-prices .old-price{
+    letter-spacing: -0.0045em;
+text-decoration-line: line-through;
+color: var(--pink);
+font-size: var(--medium-font-size);
+line-height: 22px;
+font-weight: bold;
+align-self: flex-start;
+}
+
+div.pricing-card div.plan-pricing-prices .new-price{
+    font-weight: 700;
+font-size: 45px;
+line-height: 52px;
+letter-spacing: -0.0045em;
+color: var(--violet-color)
+}
+
+div.pricing-card div.plan-pricing-prices .package-duration{
+    font-size: var(--small-font-size);
+    font-weight: var(--small-line-height);
+    color: var(--gray);
+    align-self: flex-end;
 }
