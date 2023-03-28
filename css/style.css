@@ -1,0 +1,240 @@
+:root{
+    --violet-color: #370050;
+    --orange-accent: #EC6225;
+    --gray: #524658;
+    --light-pomelo:#FEF1E1;
+    --light-gray:  #F8F8F8;
+    
+    --medium-font-size:18px;
+    --medium-line-height:27px;
+
+    --small-font-size:15px;
+    --small-line-height:21px;
+
+    --xsmall-font-size:12px;
+    --xsmall-line-height:18px;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "arboria", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--small-font-size);
+    line-height: var(--xsmall-line-height);
+    color:  var(--gray);
+}
+
+h2{
+    font-size: 35px;
+line-height: 41px;
+letter-spacing: -0.0035em;
+color: var(--violet-color);
+font-weight: bold;
+}
+
+hr.divider{
+    border: 1px solid rgba(82, 70, 88, 0.16);
+    margin: 0;
+}
+
+.wrapper{
+    max-width: 1152px;
+    margin: 0 auto;
+}
+.wrapper.small{
+    max-width: 800px;
+}
+
+/* Header */
+.menu-1st .content, .menu-2nd .content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+/*Menu items*/
+
+ul.sub-menu{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;    
+}
+
+/* 1st menu */
+
+.menu-1st .left li{
+    padding: 0 20px;
+} 
+
+.menu-1st .right li{
+    padding: 0 10px;
+} 
+
+.side-borders{
+    border-left: 1px solid var(--gray);
+    border-right: 1px solid var(--gray);
+    
+}
+
+.menu-1st li{
+    font-size: var(--small-font-size);
+    line-height: var(var(--small-line-height));
+}
+
+/* 2nd menu */
+.menu-2nd{
+    background: var(--light-gray);
+    padding: 5px 0px;
+}
+
+.menu-2nd li{
+    font-size: var(--medium-font-size);
+    line-height: var(--medium-line-height);
+}
+
+.menu-2nd .right nav ul{
+    gap: 32px;
+}
+
+/*buttons */
+.btn{
+    display: inline-block;
+    font-weight: bold;
+    font-size: var(--medium-font-size);
+    line-height: var(--medium-line-height);
+padding: 9px 32px 10px;
+border-radius: 10px;
+text-decoration: none;
+}
+
+.btn.dark{
+    background-color: var(--orange-accent);
+    color:#FFF;
+}
+
+.btn.light{
+background: var(--light-pomelo);
+color: var(--orange-accent);
+}
+
+/*Hero Section*/
+section.hero-section{
+    background: var(--violet-color);
+}
+
+.hero-section .content{
+    text-align: center;
+}
+
+.hero-section h1{
+    font-weight: 700;
+font-size: 45px;
+line-height: 52px;
+letter-spacing: -0.0045em;
+color:#fff;
+}
+
+.hero-section p{
+    color:#FFF;
+    font-size: var(--medium-font-size);
+    line-height: var(--medium-line-height);
+    margin-bottom: 22px;
+}
+
+
+.hero-section .btn, .hero-section form{
+    margin-top: 32px;
+}
+
+.hero-section .info{
+    padding: 47px 0;
+}
+
+.hero-section .info span{
+    font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+    font-size: var(--small-font-size);
+    line-height: var(--xsmall-line-height);
+    color: #FFF;
+}
+
+.hero-section .info img{
+    width: 90px;
+    height: 14px;
+}
+
+img.trustpilot{
+margin-left: -20px;
+}
+
+.hero-section form{
+    position: relative;
+    width: 480px;
+    margin: 0px auto  ;
+}
+
+.hero-section form input[type="text"]{
+height: 48px;
+width: 480px;
+border-radius: 22px;
+padding-left: 22px;
+font-size: var(--medium-font-size);
+line-height: var(--medium-line-height);
+border-width: 0px;
+}
+
+.hero-section form button{
+    position: absolute;
+    top: 2px;
+    right:2px;
+    height: 44px;
+    width: 44px;
+    border-radius: 22px;
+    border: none;
+    background: var(--orange-accent);
+    color: #FFF;
+}
+
+.hero-section form button svg{
+    fill: #FFF;
+    font-size: 1.2rem;
+    margin-left: 3px;
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+    
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+
+
+/*links*/
+li a{
+    text-decoration: none;
+    color: var(--gray);
+}
+
+/* Pricing section */
+section.pricing-section{
+    background:  linear-gradient(180deg, rgba(248, 248, 248, 0) 0%, #F8F8F8 100%), #FFFFFF;
+    height: 500px;
+}
+
+section.pricing-section .wrapper .content{
+    text-align: center;
+}
