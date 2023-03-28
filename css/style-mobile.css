@@ -1,0 +1,45 @@
+/* Top Menu */
+@media (max-width:768px){
+    .menu-1st{
+        display: none;
+    }
+    #burger-icon{
+        display: block;
+    }
+    .menu-2nd .right nav{
+        display: none;
+    }
+    .menu-3rd{
+        display: block;
+    }
+    .menu-3rd .container nav ul{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0px;
+        line-height: var(--small-line-height);
+    }
+
+    .hero-section .content 
+  
+    
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-section form,
+    .hero-section input
+    {
+        max-width: 100%;
+    }
+
+    .desktop-display-only{
+        display: none;
+    }
+
+    .mobile-display-only{
+        display: block;
+    }
+
+/* End mobile media query*/
+}

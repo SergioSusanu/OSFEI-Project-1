@@ -5,7 +5,10 @@
     --light-pomelo:#FEF1E1;
     --light-gray:  #F8F8F8;
     --pink: #C81162;
-    
+   
+    --large-font-size: 24px;
+    --xlarge-font-size: 30px;
+
     --medium-font-size:18px;
     --medium-line-height:27px;
 
@@ -32,6 +35,11 @@ body{
     color:  var(--gray);
 }
 
+section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 h2{
     font-size: 35px;
 line-height: 41px;
@@ -48,6 +56,19 @@ h4{
 color: var(--violet-color);
 }
 
+h5{
+    color: var(--violet-color);
+    font-size: var(--medium-font-size);
+    line-height: var(--medium-line-height);
+    font-weight: bold;
+
+}
+
+.medium-font-size{
+font-size: var(--medium-font-size);
+line-height: var(--medium-line-height);
+}
+
 hr.divider{
     border: 1px solid rgba(82, 70, 88, 0.16);
     margin: 0;
@@ -61,12 +82,24 @@ hr.divider{
     max-width: 800px;
 }
 
+.desktop-display-only{
+    display: block;
+}
+
+.mobile-display-only{
+    display: none;
+}
+
 /* Header */
 .menu-1st .content, .menu-2nd .content{
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+}
+
+#burger-icon, .menu-3rd{
+    display: none;
 }
 
 
@@ -253,7 +286,7 @@ li a{
 /* Pricing section */
 section.pricing-section{
     background:  linear-gradient(180deg, rgba(248, 248, 248, 0) 0%, #F8F8F8 100%), #FFFFFF;
-    height: 500px;
+    
 }
 
 section.pricing-section .wrapper .content{
@@ -340,4 +373,60 @@ div.pricing-card div.plan-pricing-prices .package-duration{
     font-weight: var(--small-line-height);
     color: var(--gray);
     align-self: flex-end;
+}
+
+/*FAQ Section*/
+section.faq-section div.content{
+    text-align: center;
+}
+
+.faq-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap:15px;
+}
+
+.faq-card{
+    display: flex;
+    justify-content: space-between;
+    background: #F8F8F8;
+border-radius: 20px;
+padding: 32px;
+}
+
+.faq-card .left span{
+    color: var(--violet-color);
+    font-size: var(--medium-font-size);
+    line-height: var(--medium-line-height);
+    
+}
+
+.faq-card .right span{
+font-size: var(--xlarge-font-size);
+font-weight: normal;
+}
+
+/* Help Section */
+.help-section div.content{
+    text-align: center;
+}
+
+.help-cards{
+    display: flex;
+    justify-content: space-around;
+} 
+
+.help-card{
+    text-align: center;
+}
+
+.call-cta{
+    font-weight: bold;
+}
+
+.help-card a{
+    color: var(--orange-accent);
+    padding-bottom: 2px;
 }

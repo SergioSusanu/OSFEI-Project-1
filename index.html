@@ -11,6 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-mobile.css">
+        <link rel="stylesheet" href="css/toggle-monthly.css">
         <link rel="stylesheet" href="fonts/stylesheet.css"
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
@@ -59,7 +61,8 @@
                         <div class="left">
                             <img src="images/logoDesktop.svg" alt="Community fibre logo"/>
                         </div>
-                        <div class="right"><nav>
+                        <div class="right">
+                            <nav>
                             <ul>
                                 <li>
                                     <a href="#">Broadband</a>
@@ -76,10 +79,24 @@
                                     <a href="#" class="btn dark">Get Started</a>
                                 </li>
                             </ul></nav>
+                            <img id="burger-icon" alt="burger menu icon" src="images/Burger.svg"/>
                         </div>
                         </div>
                         </div>
 
+                    </div>
+
+                    <div class="menu-3rd">
+                        <div class="container">
+                            <nav>
+                                <ul>
+                                    <li>Broadband</li>
+                                    <li>TV</li>
+                                    <li>Calls</li>
+                                    <li>Deals</li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                      
             </div>
@@ -91,7 +108,7 @@
             <div class="wrapper small">
                 <div class="content">
                     
-                    <img src="images/image 45.png" alt="&#163;35 for 1000Mbps broadband" />
+                    <img src="images/image 45.png" class="img-hero" alt="&#163;35 for 1000Mbps broadband" />
 
                     <h1>We’re faster and over £500 cheaper than the big guys</h1>
                     <p>Get 19x the UK average download speed with our 1,000 Mbps limited time offer.</p>
@@ -116,7 +133,25 @@
     <section class="pricing-section">
         <div class="wrapper">
             <div class="content">
-                <h2>It’s a no brainer! Grab your ultimate deal</h2>
+                <h2 class="desktop-display-only">It’s a no brainer! Grab your ultimate deal</h2>
+                <h2 class="mobile-display-only">Find the speed & price that fits you</h2>
+            
+            <!-- Toggle monthly switch -->
+                <div class="toggle-monthly">
+                <div id="app-cover">
+                    <div class="row">
+                      <div class="toggle-button-cover">
+                        <div class="button-cover">
+                          <div class="button r" id="button-1">
+                            <input type="checkbox" class="checkbox" />
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      </div>
+              </div>
                 <div class="pricing-cards">
                     <div class="pricing-card">
                         <h4>200 Mbps<br/>Fibre Broadband</h4>
@@ -204,6 +239,72 @@
             </div>
         </div>
     </section>
+<!-- End pricing section -->
+<section class="faq-section">
+    <div class="wrapper small">
+        <div class="content">
+            <h2>FAQs</h2>
+            <div class="faq-cards">
+                <div class="faq-card">
+                <div class="left">
+                    <span>Question?</span>
+                </div>
+                <div class="right">
+                    <span>+</span>
+                </div>
+                </div>
+                <div class="faq-card">
+                    <div class="left">
+                        <span>Question?</span>
+                    </div>
+                    <div class="right">
+                        <span>+</span>
+                    </div>
+                    </div>
+                    <div class="faq-card">
+                        <div class="left">
+                            <span>Question?</span>
+                        </div>
+                        <div class="right">
+                            <span>+</span>
+                        </div>
+                        </div>
+            </div>
+            <a href="#" class="btn light">See All FAQs</a>
+        </div>
+    </div>
+</section>
+
+<!-- End FAQ section -->
+
+<section class="help-section">
+    <div class="wrapper small">
+        <div class="content">
+            <h2>Need help?</h2>
+            <div class="help-cards">
+                <div class="help-card">
+                    <img src="images/icon-headphone.svg" alt="call icon" />
+                    <h5>For Customer Service</h5>
+                    <p class="medium-font-size">Monday - Friday: 8am - 10pm<br/>Weekends: 9am - 7pm</p>
+                   
+                    <p class="medium-font-size"><span class="call-cta">Call us on</span>:  <a href="tel:0800 082 0770">0800 082 0770</a></p>
+                </div>
+                <div class="help-card">
+                    <img src="images/icon-phone.svg" alt="call icon" />
+                    <h5>To purchase our packages</h5>
+                    <p class="medium-font-size">Monday - Friday: 9am - 8pm<br/>Saturday: 9am - 5pm</p>
+                    <p class="medium-font-size"><span class="call-cta">Call us on:</span> <a href="tel:0808 196 6262">0808 196 6262</a></p>
+                </div>
+                <div class="help-card">
+                    <img src="images/icon-letter.svg" alt="call icon" />
+                    <h5>For more help</h5>
+                    <p class="medium-font-size">Get in touch with our Customer<br/> Service Team</p>
+                    <p class="medium-font-size"><a href="tel:0808 196 6262">Submit a request</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <script src="" async defer></script>
     </body>
