@@ -321,6 +321,7 @@ flex-basis: 352px;
     flex-wrap: wrap;
     gap:20px;
     justify-content: center;
+ 
 }
 
 div.pricing-card ul{
@@ -344,8 +345,15 @@ div.pricing-card li span{
     font-weight: bold;
 }
 
-div.pricing-card div.progress-indicator{
+div.pricing-card .progress-indicator-container{
     height: 10px;
+  
+    background: #F8F8F8;
+border-radius: 4px
+}
+
+div.pricing-card div.progress-indicator{
+    height: 100%;
     background: linear-gradient(90deg, #C81162 0%, #CD205D 8.33%, #D22F58 15.62%, #D63D53 26.04%, #DB4C4D 35.94%, #DF5A48 46.35%, #E46843 57.29%, #E8763E 68.23%, #EC8439 76.56%, #F19134 87.5%, #F49E2F 98.96%);
 border-radius: 4px;
 transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -425,6 +433,10 @@ font-size: var(--xlarge-font-size);
 font-weight: normal;
 }
 
+section.faq-section a.btn{
+    padding: 10px 85px;
+}
+
 /* Help Section */
 .help-section div.content{
     text-align: center;
@@ -450,6 +462,41 @@ font-weight: normal;
     padding-bottom: 2px;
 }
 
-.toggle-monthly{
-    display: none;
+.monthly-toggle-container{
+    width: 260px;
+    height: 48px;
+    margin: 20px auto 40px auto ;
+    background: #FFFFFF;
+box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.12);
+border-radius: 24px;
+position: relative;
+}
+
+.monthly-toggle-container .duration{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    
+}
+
+.monthly-toggle-container .duration .holder{
+    z-index: 100;
+}
+
+.monthly-toggle-container .duration .holder:first-child{
+    color: #fff;
+}
+
+.monthly-toggle-container .switcher{
+    background: var(--violet-color);
+    width: 50%;
+    height: 100%;
+position: absolute;
+top: 0px;
+left: 0px;
+border-radius: inherit;
+z-index: 5;
+color:#fff;
 }
