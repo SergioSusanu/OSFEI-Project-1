@@ -1,5 +1,11 @@
 /* Top Menu */
 @media (max-width:768px){
+
+   
+
+    .btn{
+        font-weight: normal;
+    }
     .menu-1st{
         display: none;
     }
@@ -19,14 +25,15 @@
         line-height: var(--small-line-height);
     }
 
-    .hero-section .content 
-  
-    
-    {
-        padding-left: 20px;
-        padding-right: 20px;
+    .wrapper{
+        padding: 0px 16px;
     }
-
+   
+    .hero-section h2{
+        color:#fff;
+        letter-spacing: -0.0035em;
+    }
+     
     .hero-section form,
     .hero-section input
     {
@@ -40,6 +47,67 @@
     .mobile-display-only{
         display: block;
     }
+
+    img.img-hero{
+        width: 325px;
+    }
+
+/*Pricing Cards*/
+
+    div.pricing-card:first-child,
+    div.pricing-card:last-child
+    {
+        display: none;
+    }
+
+    .pricing-card a.btn,
+    .faq-section a.btn
+    {
+        width: 100%;
+    }
+
+    /*Help Cards*/
+
+    .help-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      gap: 20px;
+    } 
+
+    .purchase-packages{
+        order: 1;
+    }
+
+    .customer-service{
+        order: 2;
+    }
+
+    .live-chat{
+        order:3;
+    }
+
+/* intenet speed selectors */
+.speed-selectors{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin:40px 0;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: -0.0035em;
+    border-bottom: 1px solid rgba(82, 70, 88, 0.16);
+    
+}
+
+.speed-option{
+    padding: 0px 10px;
+}
+
+.speed-selectors .speed-option:nth-child(2){
+    border-bottom: 3px solid var(--violet-color);
+    padding-bottom: 17px;
+}
 
 /* End mobile media query*/
 }

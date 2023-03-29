@@ -36,8 +36,7 @@ body{
 }
 
 section{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 30px 0px;
 }
 
 h2{
@@ -47,6 +46,13 @@ letter-spacing: -0.0035em;
 color: var(--violet-color);
 font-weight: bold;
 
+}
+
+h3{
+    font-size: 30px;
+line-height: 36px;
+color: var(--violet-color);
+letter-spacing: -0.003em;
 }
 
 h4{
@@ -61,7 +67,17 @@ h5{
     font-size: var(--medium-font-size);
     line-height: var(--medium-line-height);
     font-weight: bold;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
 
+
+
+
+h6{
+    font-size: var(--xsmall-font-size);
+    line-height: var(--xsmall-line-height);
+    font-weight: normal;
 }
 
 .medium-font-size{
@@ -297,13 +313,14 @@ section.pricing-section .wrapper .content{
     padding: 32px 28px;
     box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.12);
 border-radius: 20px;
+flex-basis: 352px;
 }
 
 .pricing-section div.pricing-cards{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap:20px;
-    
+    justify-content: center;
 }
 
 div.pricing-card ul{
@@ -415,7 +432,9 @@ font-weight: normal;
 
 .help-cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 } 
 
 .help-card{
@@ -429,4 +448,8 @@ font-weight: normal;
 .help-card a{
     color: var(--orange-accent);
     padding-bottom: 2px;
+}
+
+.toggle-monthly{
+    display: none;
 }
