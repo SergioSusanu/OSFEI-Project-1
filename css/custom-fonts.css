@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Arboria-ThinItalic;
+    src: url(../fonts/Arboria-ThinItalic.woff),
+    url(../fonts/Arboria-ThinItalic.woff2);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-Black;
+    src: url(../fonts/Arboria-Black.woff2);
+       
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-BlackItalic;
+    src: url(../fonts/Arboria-BlackItalic.woff2);
+
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-Bold;
+    src: url(../fonts/Arboria-Bold.woff2);
+
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-BoldItalic;
+    src: url(../fonts/Arboria-BoldItalic.woff2);
+
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-Book;
+    src: url(../fonts/Arboria-Book.woff2);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-BookItalic;
+    src: url(../fonts/Arboria-BookItalic.woff2);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-Light;
+    src: url(../fonts/Arboria-Light.woff2);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-LightItalic;
+    src: url(../fonts/Arboria-LightItalic.woff2);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-MediumItalic;
+    src: url(../fonts/Arboria-MediumItalic.woff2);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-Medium;
+    src: url(../fonts/Arboria-Medium.woff2);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Arboria-Thin;
+    src: url(../fonts/Arboria-Thin.woff2);
+    font-weight: normal;
+}

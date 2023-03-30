@@ -25,9 +25,11 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     margin: 0;
-    font-family: "arboria", sans-serif;
+    font-family: Arboria-Book;
     font-weight: 400;
     font-style: normal;
     font-size: var(--small-font-size);
@@ -45,11 +47,10 @@ line-height: 41px;
 letter-spacing: -0.0035em;
 color: var(--violet-color);
 font-weight: bold;
-
 }
 
 h3{
-    font-size: 30px;
+font-size: 30px;
 line-height: 36px;
 color: var(--violet-color);
 letter-spacing: -0.003em;
@@ -70,9 +71,6 @@ h5{
     margin-block-start: 1em;
     margin-block-end: 1em;
 }
-
-
-
 
 h6{
     font-size: var(--xsmall-font-size);
